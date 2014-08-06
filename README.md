@@ -15,11 +15,11 @@ Start ElapsedTime at the beginning of your function and Stop at the end:
 
 		public void functionToTest {
 
-        	ElapsedTime.getSharedInstance(context).start("funtionToTest");
+        	ElapsedTime.getSharedInstance(context).start("functionToTest");
 
 			doSomething();
 			
-			ElapsedTime.getSharedInstance(context).stop("funtionToTest");
+			ElapsedTime.getSharedInstance(context).stop("functionToTest");
 
 		}
 
@@ -57,11 +57,11 @@ Or customizing:
 
 		public void functionToTest {
 
-        	ElapsedTime.getSharedInstance(context).start("funtionToTest", true);
+        	ElapsedTime.getSharedInstance(context).start("functionToTest", true);
 
 			doSomething();
 			
-			ElapsedTime.getSharedInstance(context).stop("funtionToTest", true);
+			ElapsedTime.getSharedInstance(context).stop("functionToTest", true);
 
 		}	
 ```
