@@ -134,8 +134,8 @@ public class ElapsedTime {
 		if (id == null)
 			return;
 		if (millis) {
-			long millis = (int) (System.currentTimeMillis() - timeTable.get(id)
-					.longValue());
+			long millis = System.currentTimeMillis()
+					- timeTable.get(id).longValue();
 			if (showToast)
 				Toast.makeText(context,
 						TAG + ": " + id + "->Stop (" + millis + " Millis)",
