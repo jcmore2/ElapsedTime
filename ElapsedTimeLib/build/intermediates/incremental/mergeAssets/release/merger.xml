@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/jcmore2/AndroidStudioProjects/24Symbols/libraries/elapsedTime/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/jcmore2/AndroidStudioProjects/24Symbols/libraries/elapsedTime/src/release/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/jcmore2/Documents/Codigo Android/ElapsedTime/ElapsedTimeLib/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/jcmore2/Documents/Codigo Android/ElapsedTime/ElapsedTimeLib/src/release/assets"/></dataSet></merger>

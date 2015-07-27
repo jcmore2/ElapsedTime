@@ -41,7 +41,7 @@ android {
 
 def siteUrl = 'https://github.com/jcmore2/ElapsedTime'      // Homepage URL of the library
 def gitUrl = 'https://github.com/jcmore2/ElapsedTime.git'   // Git repository URL
-group = "<maven group id>"                                        // Maven Group ID for the artifact
+group = "ElapsedTimeLib"                                        // Maven Group ID for the artifact
 
 
 install {
