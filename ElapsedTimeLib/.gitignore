@@ -30,6 +30,3 @@ local.properties
 *.iml
 build/
 
-#Crashlytics
-_24Symbols/src/main/assets/crashlytics-build.properties
-_24Symbols/src/main/res/values/com_crashlytics_export_strings.xml
