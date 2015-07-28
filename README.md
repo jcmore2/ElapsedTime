@@ -8,6 +8,14 @@ This library is used by developers to know the time elapsed in your project (Fun
 Usage
 -----
 
+Add to your build.gradle:
+
+```java
+
+    compile 'ElapsedTimeLib:ElapsedTimeLib:1.0.0'
+
+```
+
 Start ElapsedTime at the beginning of your function and Stop at the end:
 
 
