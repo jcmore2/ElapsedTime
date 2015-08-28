@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Elapsedtime by jcmore2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Elapsedtime</h1>
+      <h2 class="project-tagline">This library is used for developers to know the time elapsed in your project (Functions, Databases, Constructors ...). </h2>
+      <a href="https://github.com/jcmore2/ElapsedTime" class="btn">View on GitHub</a>
+      <a href="https://github.com/jcmore2/ElapsedTime/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/jcmore2/ElapsedTime/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="elapsedtime" class="anchor" href="#elapsedtime" aria-hidden="true"><span class="octicon octicon-link"></span></a>ElapsedTime</h1>
+
+<p>This library is used by developers to know the time elapsed in your project (Functions, Databases, Constructors ...). </p>
+
+<p><img src="https://raw.githubusercontent.com/jcmore2/ElapsedTime/master/Sample.png" width="270" height="480"></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Add to your build.gradle:</p>
+
+<div class="highlight highlight-java"><pre>
+    compile <span class="pl-s"><span class="pl-pds">'</span>ElapsedTimeLib:ElapsedTimeLib:1.0.0<span class="pl-pds">'</span></span>
+</pre></div>
+
+<p>Start ElapsedTime at the beginning of your function and Stop at the end:</p>
+
+<div class="highlight highlight-java"><pre>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> functionToTest {
+
+            <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>start(<span class="pl-s"><span class="pl-pds">"</span>functionToTest<span class="pl-pds">"</span></span>);
+
+            doSomething();
+
+            <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>stop(<span class="pl-s"><span class="pl-pds">"</span>functionToTest<span class="pl-pds">"</span></span>);
+
+        }
+</pre></div>
+
+<p>Or customizing:</p>
+
+<ul>
+<li>Enable Log</li>
+</ul>
+
+<div class="highlight highlight-java"><pre>
+    <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>setLogEnabled(<span class="pl-c1">false</span>);
+</pre></div>
+
+<ul>
+<li>Log type</li>
+</ul>
+
+<div class="highlight highlight-java"><pre>
+    <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>setLogType(<span class="pl-c1">LOG_TYPE<span class="pl-k">.</span>DEBUG</span>);
+</pre></div>
+
+<ul>
+<li>Set time in millis (default seconds)</li>
+</ul>
+
+<div class="highlight highlight-java"><pre>
+    <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>setMillis(<span class="pl-c1">true</span>);
+</pre></div>
+
+<ul>
+<li>start and stop showing toast</li>
+</ul>
+
+<div class="highlight highlight-java"><pre>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> functionToTest {
+
+            <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>start(<span class="pl-s"><span class="pl-pds">"</span>functionToTest<span class="pl-pds">"</span></span>, <span class="pl-c1">true</span>);
+
+            doSomething();
+
+            <span class="pl-smi">ElapsedTime</span><span class="pl-k">.</span>getSharedInstance(context)<span class="pl-k">.</span>stop(<span class="pl-s"><span class="pl-pds">"</span>functionToTest<span class="pl-pds">"</span></span>, <span class="pl-c1">true</span>);
+
+        }   </pre></div>
+
+<h2>
+<a id="credits--contact" class="anchor" href="#credits--contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits &amp; Contact</h2>
+
+<p>ElapsedTime was created by <a href="mailto:jcmore2@gmail.com">jcmore2@gmail.com</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>ElapsedTime is available under the Apache License, Version 2.0.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jcmore2/ElapsedTime">Elapsedtime</a> is maintained by <a href="https://github.com/jcmore2">jcmore2</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
